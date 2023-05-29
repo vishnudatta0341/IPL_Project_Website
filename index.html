@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Website</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchbar"
+          placeholder="Search Team here......,"
+        />
+        <div class="close1-btn">
+          <img src="./images/search.png" alt="" id="searchButton" />
+        </div>
+        <div class="close1-btn">
+          <img
+            src="./images/close.png"
+            alt=""
+            id="clear-btn"
+            onclick="clearText()"
+          />
+        </div>
+        <ul id="results"></ul>
+      </div>
+      <ul class="navitems">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#champions">Champions</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <div class="banner" id="home" class="fade">
+      <div class="trophy">
+        <img
+          src="./images/ipl_trophy_images-0f29da49-0fe1-4e57-888b-b6c9afb713d0-removebg-preview.png"
+          alt="trophy image"
+        />
+        <p>IPL 2023</p>
+      </div>
+      <div class="quote1">
+        <p>If you can</p>
+        <p>DREAM IT</p>
+        <p>you can</p>
+        <p>DO IT</p>
+      </div>
+    </div>
+    <div class="container" id="about">
+      <div class="about">
+        <p>
+          The Indian Premier League (IPL) is a professional Twenty20 cricket
+          league held in India. Launched in 2008, the IPL has become one of the
+          most popular and financially lucrative cricket tournaments in the
+          world.
+        </p>
+        <p>
+          The league features franchise teams representing different cities and
+          states in India, with players from both India and around the globe
+          participating. The IPL follows a round-robin and knockout format,
+          where teams compete in a series of matches leading to the playoffs and
+          the ultimate showdown in the final.The league attracts top cricketing
+          talent, with renowned players showcasing their skills and entertaining
+          millions of fans. IPL matches are known for their high-intensity
+          action, electrifying atmosphere, and innovative gameplay.
+        </p>
+        <p>
+          The league has witnessed memorable performances, nail-biting finishes,
+          and incredible displays of power-hitting and bowling prowess. The IPL
+          has also played a significant role in the growth of cricket as a sport
+          and has brought attention to several young talents who have gone on to
+          represent their respective national teams. Beyond the cricketing
+          spectacle, the IPL has had a profound impact on the Indian economy,
+          tourism, and the overall development of cricket infrastructure in the
+          country. Overall, the IPL has revolutionized the cricketing landscape,
+          providing a platform for players to showcase their skills and
+          entertaining fans with its thrilling brand of cricket.
+        </p>
+      </div>
+      <div class="aboutImg">
+        <img
+          src="./images/batsman-removebg-preview (1).png"
+          alt="cricket illustration"
+        />
+      </div>
+    </div>
+    <div class="teams" id="teams">
+      <div class="container1">
+        <div class="card">
+          <a href="./csk.html"
+            ><img
+              src="./images/csk_logo_new-removebg-preview.png"
+              alt="team logos"
+            />
+            <p>CSK</p></a
+          >
+        </div>
+        <div class="card">
+          <a href="kkr.html"
+            ><img src="./images/kkr-removebg-preview.png" alt="team logos" />
+            <p>KKR</p></a
+          >
+        </div>
+        <div class="card">
+          <a href="srh.html"
+            ><img
+              src="./images/SRH-team-logo-removebg-preview.png"
+              alt="team logos"
+            />
+            <p>SRH</p></a
+          >
+        </div>
+        <div class="card">
+          <a href="pbks.html"
+            ><img
+              src="./images/Punjab-Kings-logo-removebg-preview.png"
+              alt="team logos"
+            />
+            <p>PBKS</p></a
+          >
+        </div>
+        <div class="card">
+          <a href="dc.html"
+            ><img
+              src="./images/79d51b00d8a2511ae5eb1c4f97fc222e-removebg-preview.png"
+              alt="team logos"
+            />
+            <p>DC</p></a
+          >
+        </div>
+        <div class="card">
+          <a href=""
+            ><img src="./images/download.png" alt="team logos" />
+            <p>ADD New Team</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="champions" id="champions">
+      <div class="chamhead"><h1>CHAMPIONS</h1></div>
+      <div class="main-table">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <td>YEAR</td>
+              <td>IPL WINNER TEAM</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+            <tr>
+              <td>2023</td>
+              <td>.........................</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>Gujarat Titans</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>Chennai Super Kings</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>Mumbai Indians</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>Mumbai Indians</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>Chennai Super Kings</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>Mumbai Indians</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>Sunrisers Hyderabad</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>Mumbai Indians</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>Kolkata Knight Riders</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>Mumbai Indians</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>Kolkata Knight Riders</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>Chennai Super Kings</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>Chennai Super Kings</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>Deccan Chargers</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>Rajasthan Royals</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="highlights" id="highlights">
+      <div class="head"><h1>HIGHLIGHTS</h1></div>
+      <div class="menu">
+        <div class="big-display">
+          <div class="thumbnail-0">
+            <img src="./images/thumbnail-0.jpg" alt="thumbnail-0" />
+          </div>
+          <div class="play-btn">
+            <img
+              src="./images/play-button.png"
+              alt="play-btn"
+              onclick="playVideo('./videos/v2.mp4')"
+            />
+          </div>
+        </div>
+        <div class="small-display">
+          <div class="list">
+            <div class="thumbnail-1">
+              <img src="./images/lsg vs mi thumbnail.jpg" alt="" />
+            </div>
+            <div class="play-btn-1">
+              <img
+                src="./images/play-button.png"
+                alt=""
+                onclick="playVideo('./videos/v1.mp4')"
+              />
+            </div>
+          </div>
+          <div class="list">
+            <div class="thumbnail-1">
+              <img src="./images/ms dhoni super six.jpg" alt="" />
+            </div>
+            <div class="play-btn-1">
+              <img
+                src="./images/play-button.png"
+                alt=""
+                onclick="playVideo('./videos/v3.mp4')"
+              />
+            </div>
+          </div>
+          <div class="list">
+            <div class="thumbnail-1">
+              <img src="./images/viratkholi new.jpg" alt="" />
+            </div>
+            <div class="play-btn-1">
+              <img
+                src="./images/play-button.png"
+                alt=""
+                onclick="playVideo('./videos/v3.mp4')"
+              />
+            </div>
+          </div>
+          <div class="list">
+            <div class="thumbnail-1">
+              <img src="./images/lsg vs mi thumbnail.jpg" alt="" />
+            </div>
+            <div class="play-btn-1">
+              <img
+                src="./images/play-button.png"
+                alt=""
+                onclick="playVideo('./videos/v4.mp4')"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-player" id="video-player">
+        <div class="close-btn">
+          <img src="./images/delete-button.png" alt="" onclick="closeVideo()" />
+        </div>
+        <video width="100%" controls autoplay muted id="my-video">
+          <source src="./videos/v2.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script>
+      var videoplayer = document.getElementById("video-player");
+      var myVideo = document.getElementById("my-video");
+      function closeVideo() {
+        videoplayer.style.display = "none";
+      }
+      function playVideo(file) {
+        myVideo.src = file;
+        videoplayer.style.display = "block";
+      }
+      function clearText() {
+        const name = document.querySelector("#searchbar");
+        name.value = "";
+        resultsList.style.display = "none";
+      }
+      // Get references to HTML elements
+      var searchInput = document.getElementById("searchbar");
+      var searchButton = document.getElementById("searchButton");
+      var resultsList = document.getElementById("results");
+
+      // Add event listener to search button
+      searchButton.addEventListener("click", function () {
+        resultsList.style.display = "block";
+        var searchTerm = searchInput.value;
+
+        // Clear previous search results
+        resultsList.innerHTML = "";
+
+        // Perform search
+        var results = performSearch(searchTerm);
+
+        // Display results
+        results.forEach(function (result) {
+          var lin = document.createElement("li");
+          var link = document.createElement("a");
+          link.style.textDecoration = "none";
+          link.style.color = "black";
+          lin.style.listStyleType = "none";
+          link.href = "#teams";
+          link.textContent = result;
+          lin.appendChild(link);
+          resultsList.appendChild(lin);
+        });
+      });
+
+      // Function to perform the search
+      function performSearch(searchTerm) {
+        // This is where you would perform the actual search
+        // For this example, we'll use a dummy search with an array of data
+        var data = ["csk", "kkr", "srh", "kviip", "dc"];
+        var results = [];
+
+        for (var i = 0; i < data.length; i++) {
+          if (data[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+            results.push(data[i]);
+          }
+        }
+
+        return results;
+      }
+    </script>
+  </body>
+</html>

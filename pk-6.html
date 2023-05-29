@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUNJAB KINGS</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fafafa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#f5e108, #fff, #f5e108);
+        border-radius: 10px;
+      }
+      .logo img {
+        height: 60px;
+      }
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #0c143f;
+      }
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navitems li {
+        list-style: none;
+        padding: 12px;
+      }
+      .navitems li a {
+        text-decoration: none;
+        padding: 5px;
+        color: #fbfafa;
+      }
+      .navitems li :hover {
+        border-bottom: 2px solid #fbfbf7;
+      }
+      .logo a img:hover {
+        transform: scale(1.03);
+      }
+      .profile {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(./images/bg\ image.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 20px;
+      }
+      .photo {
+        width: 50vw;
+        height: 80vh;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 1rem;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .photo img {
+        height: 80vh;
+      }
+      .info {
+        width: 40vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 1rem;
+        font-size: 2vw;
+        color: white;
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="navitems">
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./index.html#teams">Teams</a></li>
+        <li><a href="./index.html#champions">Champions</a></li>
+        <li><a href="./index.html#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <section class="profile">
+      <div class="photo">
+        <img src="./images/pbks/pk-6.png" alt="" />
+      </div>
+      <div class="info">
+        <p><b>FULL NAME : </b>ATHARVA TAIDE</p>
+        <p><b>TEAM : </b>PBKS</p>
+        <p><b>PRICE : </b>1 CR</p>
+        <p><b>PLAYING STATUS : </b>Playing</p>
+        <p><b>ROLE : </b>All-Rounder</p>
+      </div>
+    </section>
+  </body>
+</html>

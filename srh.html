@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRH TEAM</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fafafa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#e97304, #fff, #e97304);
+        border-radius: 10px;
+      }
+      .logo img {
+        height: 60px;
+      }
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #0c143f;
+      }
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navitems li {
+        list-style: none;
+        padding: 12px;
+      }
+      .navitems li a {
+        text-decoration: none;
+        padding: 5px;
+        color: #fbfafa;
+      }
+      .navitems li :hover {
+        border-bottom: 2px solid #fbfbf7;
+      }
+      .logo a img:hover {
+        transform: scale(1.03);
+      }
+      .headerSection {
+        display: flex;
+        height: 35vh;
+        background-color: #e97304;
+        color: #fff;
+      }
+      .teamLogo {
+        width: 25vw;
+        border: 2px solid #000;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .teamLogo img {
+        width: 100%;
+      }
+      .teamDetails {
+        height: 35vh;
+        width: 50vw;
+        border: 1px solid #000;
+      }
+      .teamName {
+        height: 15vh;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .details {
+        height: 20vh;
+        display: flex;
+      }
+      .inner-box {
+        width: 16.66vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .inner-box-head {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        border: 1px solid #000;
+      }
+      .inner-box-content {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+      }
+      .winnings {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+      }
+      .champ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+      }
+      .num {
+        height: 58%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10rem;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 60px;
+      }
+      .profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 440px;
+        background-color: #e97304;
+        padding: 20px;
+        border-radius: 1rem;
+      }
+      .img {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcfcfc;
+        border-radius: 1rem;
+      }
+      .img img {
+        width: 100%;
+      }
+      .name {
+        height: 50px;
+        text-align: center;
+        font-size: 100%;
+        color: #fff;
+      }
+      .box {
+        text-align: center;
+        height: 50px;
+        flex-direction: column;
+        color: #fff;
+      }
+      .role {
+        height: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="navitems">
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./index.html#teams">Teams</a></li>
+        <li><a href="./index.html#champions">Champions</a></li>
+        <li><a href="./index.html#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <section class="headerSection">
+      <div class="teamLogo">
+        <img src="./images/SRH-team-logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="teamDetails">
+        <div class="teamName"><h1>SUNRISERS HYDERABAD</h1></div>
+        <div class="details">
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>PLAYERS</h1></div>
+            <div class="inner-box-content"><p>15</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BATSMAN</h1></div>
+            <div class="inner-box-content"><p>HARRY BROOK</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BOWLER</h1></div>
+            <div class="inner-box-content"><p>BHUVNESHWAR KUMAR</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="winnings">
+        <div class="champ"><h1>CHAMPIONSHIPS</h1></div>
+        <div class="num"><p>1</p></div>
+      </div>
+    </section>
+    <section>
+      <div class="section">
+        <div class="profile-content">
+          <a href="srh-abdul.html">
+            <div class="img">
+              <img src="./images/srh/abdul.png" alt="nitish" />
+            </div>
+            <div class="name">
+              <h1>ABDUL SAMAD</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-aiden.html">
+            <div class="img">
+              <img src="./images/srh/aiden.png" alt="rinku" />
+            </div>
+            <div class="name">
+              <h1>AIDEN MARKRAM</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-rahul.html">
+            <div class="img">
+              <img src="./images/srh/rahul.png" alt="gurbaz" />
+            </div>
+            <div class="name">
+              <h1>RAHUL TRIPATHI</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-glenn.html">
+            <div class="img">
+              <img src="./images/srh/glenn.png" alt="shreyas" />
+            </div>
+            <div class="name">
+              <h1>GLENN PHILLIPS</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-harry.html">
+            <div class="img">
+              <img src="./images/srh/harry.png" alt="narayan" />
+            </div>
+            <div class="name">
+              <h1>HARRY BROOK</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-abhishek.html">
+            <div class="img">
+              <img src="./images/srh/abhishek.png" alt="david" />
+            </div>
+            <div class="name">
+              <h1>ABHISHEK SHARMA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-marco.html">
+            <div class="img">
+              <img src="./images/srh/marco.png" alt="aukul" />
+            </div>
+            <div class="name">
+              <h1>MARCO JANSEN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-sundar.html">
+            <div class="img">
+              <img src="./images/srh/sundar.png" alt="russell" />
+            </div>
+            <div class="name">
+              <h1>WASHINGTON SUNDAR</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-vivrant.html">
+            <div class="img">
+              <img src="./images/srh/vivrant.png" alt="venkatesh" />
+            </div>
+            <div class="name">
+              <h1>VIVRANT SHARMA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-mayank.html">
+            <div class="img">
+              <img src="./images/srh/mayank.png" alt="shakib" />
+            </div>
+            <div class="name">
+              <h1>MAYANK DAGAR</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-bhuvneshwar.html">
+            <div class="img">
+              <img src="./images/srh/bhuvneshwar.png" alt="kulwant" />
+            </div>
+            <div class="name">
+              <h1>BHUVNESHWAR KUMAR</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-farooqi.html">
+            <div class="img">
+              <img src="./images/srh/farooqi.png" alt="suyash" />
+            </div>
+            <div class="name">
+              <h1>FAZALHAQ FAROOQI</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-kartik.html">
+            <div class="img">
+              <img src="./images/srh/kartik.png" alt="deepak" />
+            </div>
+            <div class="name">
+              <h1>KARTIK TYAGI</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-natarajan.html">
+            <div class="img">
+              <img src="./images/srh/natarajan.png" alt="sunil" />
+            </div>
+            <div class="name">
+              <h1>T NATARAJAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="srh-umran.html">
+            <div class="img">
+              <img src="./images/srh/umran.png" alt="varun" />
+            </div>
+            <div class="name">
+              <h1>UMRAN MALIK</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>SRH</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKR TEAM</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fafafa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#45037f, #fff, #45037f);
+        border-radius: 10px;
+      }
+      .logo img {
+        height: 60px;
+      }
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #0c143f;
+      }
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navitems li {
+        list-style: none;
+        padding: 12px;
+      }
+      .navitems li a {
+        text-decoration: none;
+        padding: 5px;
+        color: #fbfafa;
+      }
+      .navitems li :hover {
+        border-bottom: 2px solid #fbfbf7;
+      }
+      .logo a img:hover {
+        transform: scale(1.03);
+      }
+      .headerSection {
+        display: flex;
+        height: 35vh;
+        background-color: #45037f;
+        color: #fff;
+      }
+      .teamLogo {
+        width: 25vw;
+        border: 2px solid #000;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .teamLogo img {
+        width: 100%;
+      }
+      .teamDetails {
+        height: 35vh;
+        width: 50vw;
+        border: 1px solid #000;
+      }
+      .teamName {
+        height: 15vh;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .details {
+        height: 20vh;
+        display: flex;
+      }
+      .inner-box {
+        width: 16.66vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .inner-box-head {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        border: 1px solid #000;
+      }
+      .inner-box-content {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+      }
+      .winnings {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+      }
+      .champ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+      }
+      .num {
+        height: 58%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10rem;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 60px;
+      }
+      .profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 440px;
+        background-color: #45037f;
+        padding: 20px;
+        border-radius: 1rem;
+      }
+      .img {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcfcfc;
+        border-radius: 1rem;
+      }
+      .img img {
+        width: 100%;
+      }
+      .name {
+        height: 50px;
+        text-align: center;
+        font-size: 100%;
+        color: #fff;
+      }
+      .box {
+        text-align: center;
+        height: 50px;
+        flex-direction: column;
+        color: #fff;
+      }
+      .role {
+        height: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="navitems">
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./index.html#teams">Teams</a></li>
+        <li><a href="./index.html#champions">Champions</a></li>
+        <li><a href="./index.html#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <section class="headerSection">
+      <div class="teamLogo">
+        <img src="./images/kkr-removebg-preview.png" alt="" />
+      </div>
+      <div class="teamDetails">
+        <div class="teamName"><h1>KOLKATA KNIGHT RIDERS</h1></div>
+        <div class="details">
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>PLAYERS</h1></div>
+            <div class="inner-box-content"><p>15</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BATSMAN</h1></div>
+            <div class="inner-box-content"><p>SHREYAS IYER</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BOWLER</h1></div>
+            <div class="inner-box-content"><p>NITISH RANA</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="winnings">
+        <div class="champ"><h1>CHAMPIONSHIPS</h1></div>
+        <div class="num"><p>2</p></div>
+      </div>
+    </section>
+    <section>
+      <div class="section">
+        <div class="profile-content">
+          <a href="kkr-nitish.html">
+            <div class="img">
+              <img src="./images/kkr/nitish.png" alt="nitish" />
+            </div>
+            <div class="name">
+              <h1>NITISH RANA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-rinku.html">
+            <div class="img">
+              <img src="./images/kkr/rinku.png" alt="rinku" />
+            </div>
+            <div class="name">
+              <h1>RINKU SINGH</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-gurbaz.html">
+            <div class="img">
+              <img src="./images/kkr/gurbaz.png" alt="gurbaz" />
+            </div>
+            <div class="name">
+              <h1>RAHMANULLAH GURBAZ</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-shreyas.html">
+            <div class="img">
+              <img src="./images/kkr/shreyas.png" alt="shreyas" />
+            </div>
+            <div class="name">
+              <h1>SHREYAS IYER</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-narayan.html">
+            <div class="img">
+              <img src="./images/kkr/narayan.png" alt="narayan" />
+            </div>
+            <div class="name">
+              <h1>NARAYAN JAGADEESAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-david.html">
+            <div class="img">
+              <img src="./images/kkr/david.png" alt="david" />
+            </div>
+            <div class="name">
+              <h1>DAVID WIESE</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-anukul.html">
+            <div class="img">
+              <img src="./images/kkr/anukul.png" alt="aukul" />
+            </div>
+            <div class="name">
+              <h1>ANUKUL ROY</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-russell.html">
+            <div class="img">
+              <img src="./images/kkr/russell.png" alt="russell" />
+            </div>
+            <div class="name">
+              <h1>ANDRE RUSSELL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-venkatesh.html">
+            <div class="img">
+              <img src="./images/kkr/venkatesh.png" alt="venkatesh" />
+            </div>
+            <div class="name">
+              <h1>VENKATESH IYER</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-shakib.html">
+            <div class="img">
+              <img src="./images/kkr/shakib.png" alt="shakib" />
+            </div>
+            <div class="name">
+              <h1>SHAKIB AL HASAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-kulwant.html">
+            <div class="img">
+              <img src="./images/kkr/kulwant.png" alt="kulwant" />
+            </div>
+            <div class="name">
+              <h1>KULWANT KHEJROLIYA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-suyash.html">
+            <div class="img">
+              <img src="./images/kkr/suyash.png" alt="suyash" />
+            </div>
+            <div class="name">
+              <h1>SUYASH SHARMA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-umesh.html">
+            <div class="img">
+              <img src="./images/kkr/umesh.png" alt="deepak" />
+            </div>
+            <div class="name">
+              <h1>UMESH YADAV</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-sunil.html">
+            <div class="img">
+              <img src="./images/kkr/sunil.png" alt="sunil" />
+            </div>
+            <div class="name">
+              <h1>SUNIL NARINE</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="kkr-varun.html">
+            <div class="img">
+              <img src="./images/kkr/varun.png" alt="varun" />
+            </div>
+            <div class="name">
+              <h1>VARUN CHAKARAVARTHY</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>KKR</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

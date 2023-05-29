@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUNJAB KINGS</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fafafa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#0c143f, #fff, #0c143f);
+        border-radius: 10px;
+      }
+      .logo img {
+        height: 60px;
+      }
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #0c143f;
+      }
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navitems li {
+        list-style: none;
+        padding: 12px;
+      }
+      .navitems li a {
+        text-decoration: none;
+        padding: 5px;
+        color: #fbfafa;
+      }
+      .navitems li :hover {
+        border-bottom: 2px solid #fbfbf7;
+      }
+      .logo a img:hover {
+        transform: scale(1.03);
+      }
+      .headerSection {
+        display: flex;
+        height: 35vh;
+        background-color: #0c143f;
+        color: #fff;
+      }
+      .teamLogo {
+        width: 25vw;
+        border: 2px solid #000;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .teamLogo img {
+        width: 100%;
+      }
+      .teamDetails {
+        height: 35vh;
+        width: 50vw;
+        border: 1px solid #000;
+      }
+      .teamName {
+        height: 15vh;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .details {
+        height: 20vh;
+        display: flex;
+      }
+      .inner-box {
+        width: 16.66vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .inner-box-head {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        border: 1px solid #000;
+      }
+      .inner-box-content {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+      }
+      .winnings {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+      }
+      .champ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+      }
+      .num {
+        height: 58%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10rem;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 60px;
+      }
+      .profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 440px;
+        background-color: #0c143f;
+        padding: 20px;
+        border-radius: 1rem;
+      }
+      .img {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcfcfc;
+        border-radius: 1rem;
+      }
+      .img img {
+        width: 100%;
+      }
+      .name {
+        height: 50px;
+        text-align: center;
+        font-size: 100%;
+        color: #fff;
+      }
+      .box {
+        text-align: center;
+        height: 50px;
+        flex-direction: column;
+        color: #fff;
+      }
+      .role {
+        height: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="navitems">
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./index.html#teams">Teams</a></li>
+        <li><a href="./index.html#champions">Champions</a></li>
+        <li><a href="./index.html#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <section class="headerSection">
+      <div class="teamLogo">
+        <img src="./images/Punjab-Kings-logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="teamDetails">
+        <div class="teamName"><h1>PUNJAB KINGS</h1></div>
+        <div class="details">
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>PLAYERS</h1></div>
+            <div class="inner-box-content"><p>15</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BATSMAN</h1></div>
+            <div class="inner-box-content"><p>SHIKHAR DHAWAN</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BOWLER</h1></div>
+            <div class="inner-box-content"><p>HARPREET BRAR</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="winnings">
+        <div class="champ"><h1>CHAMPIONSHIPS</h1></div>
+        <div class="num"><p>0</p></div>
+      </div>
+    </section>
+    <section>
+      <div class="section">
+        <div class="profile-content">
+          <a href="pk-1.html">
+            <div class="img">
+              <img src="./images/pbks/pk-1.png" alt="nitish" />
+            </div>
+            <div class="name">
+              <h1>SHIKHAR DHAWAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-2.html">
+            <div class="img">
+              <img src="./images/pbks/pk-2.png" alt="rinku" />
+            </div>
+            <div class="name">
+              <h1>BHANUKA RAJAPAKSA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-3.html">
+            <div class="img">
+              <img src="./images/pbks/pk-3.png" alt="gurbaz" />
+            </div>
+            <div class="name">
+              <h1>JITESH SHARMA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-4.html">
+            <div class="img">
+              <img src="./images/pbks/pk-4.png" alt="shreyas" />
+            </div>
+            <div class="name">
+              <h1>JONNY BAIRSTOW</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-5.html">
+            <div class="img">
+              <img src="./images/pbks/pk-5.png" alt="narayan" />
+            </div>
+            <div class="name">
+              <h1>PRABHSIMRAN SINGH</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-6.html">
+            <div class="img">
+              <img src="./images/pbks/pk-6.png" alt="david" />
+            </div>
+            <div class="name">
+              <h1>ATHARVA TAIDE</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-7.html">
+            <div class="img">
+              <img src="./images/pbks/pk-7.png" alt="aukul" />
+            </div>
+            <div class="name">
+              <h1>RAJANGAD BAWA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-8.html">
+            <div class="img">
+              <img src="./images/pbks/pk-8.png" alt="russell" />
+            </div>
+            <div class="name">
+              <h1>RISHI DHAWAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-9.html">
+            <div class="img">
+              <img src="./images/pbks/pk-9.png" alt="venkatesh" />
+            </div>
+            <div class="name">
+              <h1>SAM CURRAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-10.html">
+            <div class="img">
+              <img src="./images/pbks/pk-10.png" alt="shakib" />
+            </div>
+            <div class="name">
+              <h1>SIKANDAR RAZA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-11.html">
+            <div class="img">
+              <img src="./images/pbks/pk-11.png" alt="kulwant" />
+            </div>
+            <div class="name">
+              <h1>HARPREET BRAR</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-12.html">
+            <div class="img">
+              <img src="./images/pbks/pk-12.png" alt="suyash" />
+            </div>
+            <div class="name">
+              <h1>ARSHDEEP SINGH</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-13.html">
+            <div class="img">
+              <img src="./images/pbks/pk-13.png" alt="deepak" />
+            </div>
+            <div class="name">
+              <h1>BALTEJ DHANDA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-14.html">
+            <div class="img">
+              <img src="./images/pbks/pk-14.png" alt="sunil" />
+            </div>
+            <div class="name">
+              <h1>KAGISO RABADA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="pk-15.html">
+            <div class="img">
+              <img src="./images/pbks/pk-15.png" alt="varun" />
+            </div>
+            <div class="name">
+              <h1>NATHAN ELLIS</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>PBKS</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

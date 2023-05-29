@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELHI CAPITALS</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fafafa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#0d78a9, #fff, #0d78a9);
+        border-radius: 10px;
+      }
+      .logo img {
+        height: 60px;
+      }
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #0c143f;
+      }
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navitems li {
+        list-style: none;
+        padding: 12px;
+      }
+      .navitems li a {
+        text-decoration: none;
+        padding: 5px;
+        color: #fbfafa;
+      }
+      .navitems li :hover {
+        border-bottom: 2px solid #fbfbf7;
+      }
+      .logo a img:hover {
+        transform: scale(1.03);
+      }
+      .headerSection {
+        display: flex;
+        height: 35vh;
+        background-color: #0d78a9;
+        color: #fff;
+      }
+      .teamLogo {
+        width: 25vw;
+        border: 2px solid #000;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .teamLogo img {
+        width: 75%;
+      }
+      .teamDetails {
+        height: 35vh;
+        width: 50vw;
+        border: 1px solid #000;
+      }
+      .teamName {
+        height: 15vh;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .details {
+        height: 20vh;
+        display: flex;
+      }
+      .inner-box {
+        width: 16.66vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .inner-box-head {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        border: 1px solid #000;
+      }
+      .inner-box-content {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+      }
+      .winnings {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+      }
+      .champ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+      }
+      .num {
+        height: 58%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10rem;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 60px;
+      }
+      .profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 440px;
+        background-color: #0d78a9;
+        padding: 20px;
+        border-radius: 1rem;
+      }
+      .img {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcfcfc;
+        border-radius: 1rem;
+      }
+      .img img {
+        width: 100%;
+      }
+      .name {
+        height: 50px;
+        text-align: center;
+        font-size: 100%;
+        color: #fff;
+      }
+      .box {
+        text-align: center;
+        height: 50px;
+        flex-direction: column;
+        color: #fff;
+      }
+      .role {
+        height: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/ipl-logo-new-old.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="navitems">
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./index.html#teams">Teams</a></li>
+        <li><a href="./index.html#champions">Champions</a></li>
+        <li><a href="./index.html#highlights">Highlights</a></li>
+      </ul>
+    </nav>
+    <section class="headerSection">
+      <div class="teamLogo">
+        <img
+          src="./images/79d51b00d8a2511ae5eb1c4f97fc222e-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="teamDetails">
+        <div class="teamName"><h1>DELHI CAPITALS</h1></div>
+        <div class="details">
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>PLAYERS</h1></div>
+            <div class="inner-box-content"><p>15</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BATSMAN</h1></div>
+            <div class="inner-box-content"><p>DAVID WARNER</p></div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-box-head"><h1>TOP BOWLER</h1></div>
+            <div class="inner-box-content"><p>ISHANT SHARMA</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="winnings">
+        <div class="champ"><h1>CHAMPIONSHIPS</h1></div>
+        <div class="num"><p>1</p></div>
+      </div>
+    </section>
+    <section>
+      <div class="section">
+        <div class="profile-content">
+          <a href="dc-1.html">
+            <div class="img">
+              <img src="./images/dc/dc-1.png" alt="nitish" />
+            </div>
+            <div class="name">
+              <h1>DAVID WARNER</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-2.html">
+            <div class="img">
+              <img src="./images/dc/dc-2.png" alt="rinku" />
+            </div>
+            <div class="name">
+              <h1>PRITHVI SHAW</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-3.html">
+            <div class="img">
+              <img src="./images/dc/dc-3.png" alt="gurbaz" />
+            </div>
+            <div class="name">
+              <h1>ROVMAN POWELL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-4.html">
+            <div class="img">
+              <img src="./images/dc/dc-4.png" alt="shreyas" />
+            </div>
+            <div class="name">
+              <h1>RIPAL PATEL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-5.html">
+            <div class="img">
+              <img src="./images/dc/dc-5.png" alt="narayan" />
+            </div>
+            <div class="name">
+              <h1>SARFARAZ KHAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-6.html">
+            <div class="img">
+              <img src="./images/dc/dc-6.png" alt="david" />
+            </div>
+            <div class="name">
+              <h1>YASH DHULL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-7.html">
+            <div class="img">
+              <img src="./images/dc/dc-7.png" alt="aukul" />
+            </div>
+            <div class="name">
+              <h1>AMAN KHAN</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Batter</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-8.html">
+            <div class="img">
+              <img src="./images/dc/dc-8.png" alt="russell" />
+            </div>
+            <div class="name">
+              <h1>AXAR PATEL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-9.html">
+            <div class="img">
+              <img src="./images/dc/dc-9.png" alt="venkatesh" />
+            </div>
+            <div class="name">
+              <h1>LALIT YADAV</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-10.html">
+            <div class="img">
+              <img src="./images/dc/dc-10.png" alt="shakib" />
+            </div>
+            <div class="name">
+              <h1>MITCHELL MARSH</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>All-Rounder</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-11.html">
+            <div class="img">
+              <img src="./images/dc/dc-11.png" alt="kulwant" />
+            </div>
+            <div class="name">
+              <h1>KAMLESH NAGARKOTI</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-12.html">
+            <div class="img">
+              <img src="./images/dc/dc-12.png" alt="suyash" />
+            </div>
+            <div class="name">
+              <h1>PRAVIN DUBEY</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-13.html">
+            <div class="img">
+              <img src="./images/dc/dc-13.png" alt="deepak" />
+            </div>
+            <div class="name">
+              <h1>VICKY OSTWAL</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-14.html">
+            <div class="img">
+              <img src="./images/dc/dc-14.png" alt="sunil" />
+            </div>
+            <div class="name">
+              <h1>ANRICH NORTJE</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+        <div class="profile-content">
+          <a href="dc-15.html">
+            <div class="img">
+              <img src="./images/dc/dc-15.png" alt="varun" />
+            </div>
+            <div class="name">
+              <h1>CHETAN SAKARIYA</h1>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p><b>TEAM:</b>DC</p>
+              </div>
+              <div class="box1">
+                <p><b>STATUS:</b>Playing</p>
+              </div>
+            </div>
+            <div class="role">
+              <p><b>ROLE:</b>Bowler</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
