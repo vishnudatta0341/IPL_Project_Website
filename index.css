@@ -392,3 +392,149 @@ tbody tr {
   width: 25vw;
   border-radius: 1rem;
 }
+.hamburger span {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+@media screen and (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100vw;
+    height: 10vh;
+    z-index: 2;
+  }
+  .hamburger .bar {
+    display: block;
+  }
+  .navitems {
+    position: fixed;
+    right: -100%;
+    top: 120px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0f0a01a2;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navitems li {
+    margin: 16px 0;
+  }
+  .navitems li a {
+    color: rgb(216, 108, 7);
+  }
+  .hamburger {
+    padding: 20px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    opacity: 1;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    opacity: 1;
+  }
+  .navitems.active {
+    right: 0;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .search-bar {
+    width: 50vw;
+  }
+  .trophy p {
+    font-size: 5vh;
+  }
+  .quote1 p:nth-child(odd) {
+    font-size: 5vh;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+  }
+  .quote1 p:nth-child(even) {
+    font-size: 5vh;
+    font-family: "Montserrat", sans-serif;
+    color: #d3d703;
+    padding: 0px;
+    margin: 0px;
+  }
+  .searchbar{
+    gap:10px;
+  }
+  #results{
+    top: 60px;
+    width: 40vw;
+  }
+  .about{
+    height: 50vh;
+  }
+  .about p{
+    font-size: 10px;
+  }
+  .aboutImg img{
+    height: 80%;
+    width: 100%;
+  }
+  .container1{
+    height: 500px;
+    width: 500px;
+    gap: 180px;
+    flex-direction: column;
+  }
+  .card{
+    height: 40px;
+    width: 40px;
+  }
+  .card img{
+    height: 100px;
+  }
+  .card p{
+    font-size: 30px;
+    background-color: #fff;
+    color:black;
+  }
+  .menu{
+    height: 600px;
+    width: 450px;
+  }
+  .big-display{
+    height: 250px;
+  }
+  .thumbnail-0{
+    height: 250px;
+  }
+  .small-display{
+    height: 550px;
+    width: 200px;
+  }
+  .list{
+    height: 250px;
+    width: 180px;
+  }
+  .video-player{
+    height: 100vh;
+    width: 100vw;
+    top: 3500px;
+  }
+}
